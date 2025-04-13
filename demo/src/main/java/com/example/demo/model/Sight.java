@@ -13,18 +13,18 @@ public class Sight {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;   // 自動生成 ID
 
-    private String sightName;
-    private String zone;
-    private String category;
-    private String photoURL;
-    private String description;
-    private String address;
 
-    // 自訂 Constructor 只給 sightName 和 photoURL 用
-    public Sight(String sightName, String photoURL) {
+    private String sightName;   // 景點名稱
+    private String zone;        // 所在區域
+    private String category;    // 分類
+    private String photoUrl;    // 圖片網址
+    private String description; // 描述
+    private String address;     // 地址
+
+    // 自訂 Constructor：只給 sightName 和 photoUrl
+    public Sight(String sightName, String photoUrl) {
         this.sightName = sightName;
-        this.photoURL = photoURL;
+        this.photoUrl = photoUrl;
     }
 }
